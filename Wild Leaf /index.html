@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neil, freelance web developer and designer, Cape Town, South Africa</title>
+        <link href="../styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Nav-->
+        <section class="nav-bar">
+            <div class="logo">
+                <a href="../index.html"><img class="NM-logo" src="../Pictures/NM Logo fill.png"/></a>  
+            </div>
+            <div id="main-nav" class="main-nav">
+                <ul id="navlist" class="menu-hover-lines overlay-content">
+                    <li class="link"><a  href="../index.html">home</a></li>
+                    <li class="link"><a href="../About me/index.html">about</a></li>
+                    <li class="link"><a href="../My projects/index.html">portfolio</a></li>
+                </ul>   
+            </div>
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" >
+                    <input class="menu-btn"  type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" id="hamburger-menu"  for="menu-btn" onclick="myFunction()"><span class="navicon"></span></label>
+                </a>
+            </div>
+         </section>
+        <!--Main section-->
+        <main>
+            <div class="project-title-text">
+                <h2>Wild Leaf Kombucha</h2>
+                <h3>Wild Leaf Kombucha is a Cape Town based Kombucha company that sells their product online as well as a variety of stores.</h3>
+                <hr />
+            </div>
+            <div class="project-page-image image1">
+                <img src="../Pictures/Wild Leaf home page.png">
+            </div>
+            <div class="project-text text1">
+                 <h3>The project</h3>
+                 <p>This project involved creating an entire eccomerce store where users can make purchases online and have the product delivered to them.
+                     <br />I built the original site on Wix, but after a year the decision was made to rebuild it on Shopify.
+                 </p>
+            </div>
+            <div class="project-page-image image2">
+                <img src="../Pictures/Wild Leaf product page.png">
+            </div>
+            <div class="project-text text2">
+                 <h3>My goal</h3>
+                 <p>My goal for this project was to provide enough information to users on what Kombucha is, as it was fairly new to South Africa when the site launched. 
+                     <br />I also wanted to make it easy for users to navigate through the site, find out where they could purchase the product from and be able to make purchases online easily.
+                </p>
+            </div>
+            <div class="project-page-image image3">
+                <img src="../Pictures/Wild Leaf checkout cart.png">
+            </div>
+            <div class="project-text text3">
+                <h3>What I did</h3>
+                <ul>
+                    <li>Created the wireframe for the design layout of the homepage</li>
+                    <li>Built the front-end of all the other pages using HTML and CSS. This included making sure they were responsive across multiple device sizes.</li> 
+                    <li>Set up the backend of the Shopify store which included uploading all products, shipping details, activating payment methods.</li>
+                    <li>Created and edited all the product photos.</li>     
+                </ul>
+            </div>
+            <div class="project-page-image image4">
+                <img src="../Pictures/Wild Leaf stockists.png">
+            </div>
+        </main>
+
+
+
+         <!--Footer section-->
+        <footer>
+            <h3 onclick="openContact()">Contact me</h3>
+            <div id="contact-form" class="overlay-contact">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+                <form class="overlay-content">
+                    <p>Want to work together?<br/> Use the contact form below or <a id="email-me" href="mailto:neilmackay01@gmail.com">email me</a></p>
+                    <input class="input" type="text" name="name" maxlength="100" placeholder="Name" />
+                    <br />
+                    <input class="input" type="email" name="email" maxlength="100" placeholder="Email" />
+                    <br />
+                    <textarea class="textarea" name="message" cols="20" row="10" placeholder="Enter your message"></textarea>
+                    <br />
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+        </footer>
+        <script src="../lightbox.js"></script>  
+    </body>
+</html>
