@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neil, freelance web developer and designer, Cape Town, South Africa</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Nav-->
+        <section class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img class="NM-logo" src="Pictures/NM Logo fill.png"/></a>  
+                </div>
+                <div id="main-nav" class="main-nav">
+                    <ul id="navlist" class="menu-hover-lines overlay-content">
+                        <li class="link"><a  href="index.html">home</a></li>
+                        <li class="link"><a href="About me/index.html">about</a></li>
+                        <li class="link"><a href="My projects/index.html">portfolio</a></li>
+                    </ul>   
+                </div>
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="icon" >
+                        <input class="menu-btn"  type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" id="hamburger-menu"  for="menu-btn" onclick="myFunction()"><span class="navicon"></span></label>
+                    </a>
+                </div>
+        </section>
+        
+        <!--Header-->
+        <header>  
+            <div id="welcome-section-text">
+                <h1>Hello, my name is Neil.</h1>
+                <h2 id="welcome-text">I design and create websites.</h2> 
+            </div>  
+            <div id="header-image">
+                <div id="image-container">
+                    <img src="Logos/Logos-background.png">
+                    <div class="skills-button modal-button" id="developer"  href="#developer-modal"></div>
+                    <div class="skills-button modal-button" id="designer"  href="#designer-modal"></div>
+                    <div class="skills-button modal-button" id="ecommerce" href="#ecommerce-modal"></div>
+                    <div class="skills-button modal-button" id="adobe" href="#adobe-modal"></div>
+                </div>
+            </div>
+            <div id="top-row">
+                <div class="logo-animation1 visible"><img src="Logos/Ps.png"></div>
+                <div class="logo-animation2 visible"><img src="Logos/AI.png"></div>
+                <div class="logo-animation3 visible"><img src="Logos/ID.png"></div>
+                <div class="logo-animation4 visible"><img src="Logos/XD.png"></div>
+                <div class="logo-animation5 visible"><img src="Logos/Figma grey.png"></div>
+                <div class="logo-animation6 visible"><img src="Logos/HTML5.png"></div>
+                <div class="logo-animation7 visible"><img src="Logos/CSS3.png"></div>
+                <div class="logo-animation8 visible"><img src="Logos/JS.png"></div>
+                <div class="logo-animation9 visible"><img src="Logos/Shopify.png"></div>
+                <div class="logo-animation10 visible"><img src="Logos/Wix.png"></div>
+            </div>
+
+            <div id="developer-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="about-text development">
+                        <h3>Web deveoplment</h3>
+                        <div class="about-logo"><img src="Logos/HTML5.png"></div>
+                        <div class="about-logo"><img src="Logos/CSS3.png"></div>
+                        <div class="about-logo"><img src="Logos/JS.png"></div>
+                        <ul>
+                            <li>HTML / CSS</li>
+                            <li>Javascript (learning)</li>
+                            <li>Front-end development</li>
+                            <li>SEO</li>
+                       </ul>
+                    </div>
+                </div>
+            </div> 
+            <div id="designer-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="about-text design">
+                        <h3>Web design</h3>
+                        <div class="about-logo"><img src="Logos/XD.png"></div>
+                        <div class="about-logo"><img src="Logos/Figma grey.png"></div>
+                        <ul>
+                            <li>UX design</li>
+                            <li>Creating prototypes</li>
+                            <li>Responsive design</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="ecommerce-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="about-text adobe">
+                        <h3>Adobe products</h3>
+                        <div class="about-logo"><img src="Logos/Ps.png"></div>
+                        <div class="about-logo"><img src="Logos/AI.png"></div>
+                        <div class="about-logo"><img src="Logos/ID.png"></div>
+                        <ul>
+                            <li>UI design</li>
+                            <li>Photo editing</li>
+                            <li>Photo manipulation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="adobe-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="about-text builder">
+                        <h3>Web builders</h3>
+                        <div class="about-logo"><img src="Logos/Shopify.png"></div>
+                        <div class="about-logo"><img src="Logos/Wix.png"></div>
+                        <ul>
+                            <li>Shopify</li>
+                            <li>Wix</li>
+                            <li>Wordpress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </header>  
+        
+
+
+     
+
+        <!--Projects home page-->
+        <section id="projects-home">
+            <h2 id="project-title"><div><hr /></div>My projects</h2>
+            <a class="WL-home project-image" href="Wild Leaf /index.html">
+                <p class="project-name">Ecommerce store</p>
+                <img src="Pictures/Wild Leaf home page mobile.jpg">
+            </a>
+            <a class="TS-home project-image" href="Tiffany Sosa/index.html">
+                <p class="project-name">Graphic design portfolio</p>
+                <img src="Pictures/Tiffany Sosa home page mobile.jpg">
+            </a>
+        </section>
+
+        <!--Footer section-->
+        <footer>
+                <h3 onclick="openContact()">Contact me</h3>
+                <div id="contact-form" class="overlay-contact">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+                    <form class="overlay-content">
+                        <p>Want to work together?<br/> Use the contact form below or <a id="email-me" href="mailto:neilmackay01@gmail.com">email me</a></p>
+                        <input class="input" type="text" name="name" maxlength="100" placeholder="Name" />
+                        <br />
+                        <input class="input" type="email" name="email" maxlength="100" placeholder="Email" />
+                        <br />
+                        <textarea class="textarea" name="message" cols="20" row="10" placeholder="Enter your message"></textarea>
+                        <br />
+                        <input type="submit" name="submit" value="Submit" />
+                    </form>
+                </div>
+            </footer>
+            <script src="lightbox.js"></script> 
+    </body>
+</html>
+
+
+
+
