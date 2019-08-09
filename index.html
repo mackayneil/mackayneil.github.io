@@ -146,15 +146,17 @@
                 <h3 onclick="openContact()">Contact me</h3>
                 <div id="contact-form" class="overlay-contact">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
-                    <form class="overlay-content">
+                    <form class="overlay-content" method="post" action="index.php">
                         <p>Want to work together?<br/> Use the contact form below or <a id="email-me" href="mailto:neilmackay01@gmail.com">email me</a></p>
-                        <input class="input" type="text" name="name" maxlength="100" placeholder="Name" />
+                        <input class="input" type="text" name="name" maxlength="100" placeholder="Name" required />
                         <br />
-                        <input class="input" type="email" name="email" maxlength="100" placeholder="Email" />
+                        <input class="input" type="email" name="email" maxlength="100" placeholder="Email" required />
                         <br />
-                        <textarea class="textarea" name="message" cols="20" row="10" placeholder="Enter your message"></textarea>
+                        <textarea class="textarea" name="message" cols="20" row="10" placeholder="Enter your message" required></textarea>
                         <br />
-                        <input type="submit" name="submit" value="Submit" />
+                        <label>*What is 2+2? (Anti-spam)</label>
+                        <input name="human" placeholder="Type Here">
+                        <input id="submit" type="submit" name="submit" value="Submit" />
                     </form>
                 </div>
             </footer>

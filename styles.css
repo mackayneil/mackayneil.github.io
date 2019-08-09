@@ -658,6 +658,15 @@ footer > h3:hover {
   height: 150px;
   width: 60%;
 }
+input:focus, textarea:focus {
+  border:1px solid #97d6eb;
+}
+#submit {
+  cursor: pointer;
+}
+#submit:hover {
+  opacity: 0.8;
+}
 
 @media only screen and (min-width: 900px) {
   .input {
