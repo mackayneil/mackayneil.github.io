@@ -337,26 +337,26 @@ img {
 #projects-home > a {
   text-decoration: none;
 }
-.WL-home {
+.project1 {
   grid-area: 2 / 1 / span 1 / -1; 
 }
-.TS-home {
+.project2 {
   grid-area: 3 / 1 / span 1 / -1; 
 }
-.EFM-home {
+.project3 {
   grid-area: 4 / 1 / span 1 / -1; 
 }
 
 @media only screen and (min-width: 900px) {
-  .WL-home {
+  .project1 {
     grid-area: 2 / 1 / span 1 / span 4; 
     margin: 30px;
   }
-  .TS-home {
+  .project2 {
     grid-area: 2 / 5 / span 1 / span 4; 
     margin: 30px;
   }
-  .EFM-home {
+  .project3 {
     grid-area: 2 / 9 / span 1 / span 4; 
     margin: 30px;
   }
@@ -378,8 +378,11 @@ img {
 .TS-project {
   grid-area: 3 / 1 / span 1 / -1; 
 }
-.EFM-project {
+.product-page-project {
   grid-area: 4 / 1 / span 1 / -1; 
+}
+.EFM-project {
+  grid-area: 5 / 1 / span 1 / -1; 
 }
 #projects > a {
   text-decoration: none;
@@ -387,15 +390,19 @@ img {
 @media only screen and (min-width: 900px) {
   .WL-project {
     grid-area: 2 / 1 / span 1 / span 4; 
-    margin: 30px 30px 250px 30px;
+    margin: 30px;
   }
   .TS-project {
     grid-area: 2 / 5 / span 1 / span 4; 
-    margin: 30px 30px 250px 30px;
+    margin: 30px;
+  }
+  .product-page-project {
+    grid-area: 2 / 9 / span 1 / span 4; 
+    margin: 30px;
   }
   .EFM-project {
-    grid-area: 2 / 9 / span 1 / span 4; 
-    margin: 30px 30px 250px 30px;
+    grid-area: 3 / 1 / span 1 / span 4; 
+    margin: 30px;
   }
 }
 /*About*/
@@ -527,6 +534,7 @@ li {
   padding: 10px 30px;
   text-align: center;
 }
+
 .image1 {
   grid-area: 2 / 1 / span 1 / -1; 
 }
