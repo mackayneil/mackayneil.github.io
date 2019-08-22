@@ -28,7 +28,7 @@ function closeContact() {
 
 
 //Modal//
-var btn = document.querySelectorAll("div.modal-button");
+var btn = document.querySelectorAll("button.modal-button");
 
 var modals = document.querySelectorAll('.modal');
 
