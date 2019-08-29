@@ -387,6 +387,9 @@ img {
 .EFM-project {
   grid-area: 5 / 1 / span 1 / -1; 
 }
+.restaurant-app-project {
+  grid-area: 6 / 1 / span 1 / -1; 
+}
 #projects > a {
   text-decoration: none;
 }
@@ -405,6 +408,10 @@ img {
   }
   .EFM-project {
     grid-area: 3 / 1 / span 1 / span 4; 
+    margin: 30px;
+  }
+  .restaurant-app-project {
+    grid-area: 3 / 5 / span 1 / span 4; 
     margin: 30px;
   }
 }
