@@ -390,6 +390,9 @@ img {
 .restaurant-app-project {
   grid-area: 6 / 1 / span 1 / -1; 
 }
+.bonsai-prototype-project {
+  grid-area: 7 / 1 / span 1 / -1; 
+}
 #projects > a {
   text-decoration: none;
 }
@@ -412,6 +415,10 @@ img {
   }
   .restaurant-app-project {
     grid-area: 3 / 5 / span 1 / span 4; 
+    margin: 30px;
+  }
+  .bonsai-prototype-project {
+    grid-area: 3 / 9 / span 1 / span 4; 
     margin: 30px;
   }
 }
