@@ -1,167 +1,516 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Neil, freelance web developer and designer, Cape Town, South Africa</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <!--Nav-->
-        <section class="nav-bar">
-                <div class="logo">
-                    <a href="index.html"><img class="NM-logo" src="Pictures/NM Logo fill.png"/></a>  
-                </div>
-                <div id="main-nav" class="main-nav">
-                    <ul id="navlist" class="menu-hover-lines overlay-content">
-                        <li class="link"><a  href="index.html">home</a></li>
-                        <li class="link"><a href="About me/index.html">about</a></li>
-                        <li class="link"><a href="My projects/index.html">portfolio</a></li>
-                    </ul>   
-                </div>
-                <div class="hamburger">
-                    <a href="javascript:void(0);" class="icon" >
-                        <input class="menu-btn"  type="checkbox" id="menu-btn" />
-                        <label class="menu-icon" id="hamburger-menu"  for="menu-btn" onclick="myFunction()"><span class="navicon"></span></label>
-                    </a>
-                </div>
-        </section>
-        
-        <!--Header-->
-        <header>  
-            <div id="welcome-section-text">
-                <h1>Hello, my name is Neil.</h1>
-                <h2 id="welcome-text">I design and create websites.</h2> 
-            </div>  
-            <div id="header-image">
-                <div id="image-container">
-                    <img src="Logos/Logos-background.jpg">
-                    <button class="skills-button modal-button" id="developer"  href="#developer-modal">Developer</button>
-                    <button class="skills-button modal-button" id="designer"  href="#designer-modal">Designer</button>
-                    <button class="skills-button modal-button" id="ecommerce" href="#ecommerce-modal">E-commerce</button>
-                    <button class="skills-button modal-button" id="adobe" href="#adobe-modal">Adobe suite</button>
-                </div>
-            </div>
-            <div id="top-row">
-                <div class="logo-animation1 visible"><img src="Logos/Ps.png"></div>
-                <div class="logo-animation2 visible"><img src="Logos/AI.png"></div>
-                <div class="logo-animation3 visible"><img src="Logos/ID.png"></div>
-                <div class="logo-animation4 visible"><img src="Logos/XD.png"></div>
-                <div class="logo-animation5 visible"><img src="Logos/Figma grey.png"></div>
-                <div class="logo-animation6 visible"><img src="Logos/HTML5.png"></div>
-                <div class="logo-animation7 visible"><img src="Logos/CSS3.png"></div>
-                <div class="logo-animation8 visible"><img src="Logos/JS.png"></div>
-                <div class="logo-animation9 visible"><img src="Logos/Shopify.png"></div>
-                <div class="logo-animation10 visible"><img src="Logos/Wix.png"></div>
-            </div>
-
-            <div id="developer-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="about-text development">
-                        <h3>Web deveoplment</h3>
-                        <div class="about-logo"><img src="Logos/HTML5.png"></div>
-                        <div class="about-logo"><img src="Logos/CSS3.png"></div>
-                        <div class="about-logo"><img src="Logos/JS.png"></div>
-                        <ul>
-                            <li>HTML / CSS</li>
-                            <li>Javascript (learning)</li>
-                            <li>Front-end development</li>
-                            <li>SEO</li>
-                       </ul>
-                    </div>
-                </div>
-            </div> 
-            <div id="designer-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="about-text design">
-                        <h3>Web design</h3>
-                        <div class="about-logo"><img src="Logos/XD.png"></div>
-                        <div class="about-logo"><img src="Logos/Figma grey.png"></div>
-                        <ul>
-                            <li>UX design</li>
-                            <li>Creating prototypes</li>
-                            <li>Responsive design</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="adobe-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="about-text adobe">
-                        <h3>Adobe products</h3>
-                        <div class="about-logo"><img src="Logos/Ps.png"></div>
-                        <div class="about-logo"><img src="Logos/AI.png"></div>
-                        <div class="about-logo"><img src="Logos/ID.png"></div>
-                        <ul>
-                            <li>UI design</li>
-                            <li>Photo editing</li>
-                            <li>Photo manipulation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="ecommerce-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="about-text builder">
-                        <h3>Web builders</h3>
-                        <div class="about-logo"><img src="Logos/Shopify.png"></div>
-                        <div class="about-logo"><img src="Logos/Wix.png"></div>
-                        <ul>
-                            <li>Shopify</li>
-                            <li>Wix</li>
-                            <li>Wordpress</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>   
-        </header>  
-        
+<!doctype html>
+  <html lang="en">
+    <head>    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+      <meta name="author" content="Neil Mackay">             
+      <link href="styles.css" rel="stylesheet" type="text/css">         
+      <link href="bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet" type="text/css">      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+      <title>UI/UX designer | Neil Mackay</title>
 
 
      
 
-        <!--Projects home page-->
-        <section id="projects-home">
-            <h2 id="project-title"><div><hr /></div>My projects</h2>
-            <a class="project1 project-image" href="Wild Leaf /index.html">
-                <p class="project-name">Ecommerce store</p>
-                <img src="Pictures/Wild Leaf home page mobile.jpg">
-            </a>
-            <a class="project2 project-image" href="Bonsai protoype/index.html">
-                <p class="project-name">Bonsai store template</p>
-                <img src="Pictures/Bonsai with mobile.jpg">
-            </a>
-            <a class="project3 project-image" href="Single product page/index.html">
-                <p class="project-name">Single product page</p>
-                <img src="Pictures/Product Page home page.jpg">
-            </a>
-        </section>
 
-        <!--Footer section-->
-        <footer>
-                <h3 onclick="openContact()">Contact me</h3>
-                <div id="contact-form" class="overlay-contact">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
-                    <form class="overlay-content" method="post" action="https://formspree.io/neilmackay01@gmail.com">
-                        <p>Want to work together?<br/> Use the contact form below or <a id="email-me" href="mailto:neilmackay01@gmail.com">email me</a></p>
-                        <input class="input" type="text" name="name" maxlength="100" placeholder="Name" required />
-                        <br />
-                        <input class="input" type="email" name="email" maxlength="100" placeholder="Email" required />
-                        <br />
-                        <textarea class="textarea" name="message" cols="20" row="10" placeholder="Enter your message" required></textarea>
-                        <br />
-                        <input id="submit" type="submit" name="submit" value="Submit" />
-                    </form>
+    </head>
+        <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+          <div class="container-fluid">
+            <nav class="navbar navbar-default d-sm-none">
+              <div class="container-fluid">
+                <div class="navbar-header d-flex w-100 justify-content-between fixed-top px-4 pt-3 bg-white">
+                  <button type="button" class="navbar-toggler" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-expanded="false" onclick="lockScroll();">
+                    <i class="fas fa-bars turquoise"></i>
+                  </button>
+                  <a class="navbar-brand font-Lora text-dark-grey" href="http://mackayneil.github.io">Neil Mackay</a>
+                </div>             
+                <div class="collapse navbar-collapse hidden-navbar" id="slide-navbar-collapse">
+                  <i class="fas fa-times turquoise pt-4 ml-3 pl-2 font-size-24 close-nav"></i>
+                  <ul class="nav nav-menu-link flex-column justify-content-center pl-3">
+                    <li class="nav-item d-flex align-items-center row pb-3">
+                      <i class="fas fa-home text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                      <a class="nav-link nav-menu-link" href="#section1">Home</a>      
+                    </li>
+                    <li class="nav-item d-flex align-items-center row pb-3">
+                      <i class="fas fa-user text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                      <a class="nav-link nav-menu-link" href="#section2">About me</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center row pb-3">
+                      <i class="fas fa-th-large text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                      <a class="nav-link nav-menu-link" href="#section3">Portfolio</a>   
+                    </li>
+                    <li class="nav-item d-flex align-items-center row pb-3">
+                      <i class="fas fa-file-alt text-black col-1 text-center ml-1 pl-3" aria-hidden="true"></i>
+                      <a class="nav-link nav-menu-link" href="#section4">Resumé</a> 
+                    </li>  
+                    <li class="nav-item d-flex align-items-center row pb-5 mb-5">
+                      <i class="fas fa-envelope text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                      <a class="nav-link nav-menu-link" href="mailto:neilmackay01@gmail.com">Contact</a>  
+                    </li>                            
+                  </ul>
+                  <div class=" mb-2 fixed-bottom ml-5">
+                    <a class="nav-link " href="https://www.linkedin.com/in/neilmackay" target="_blank"><i class="fab fa-linkedin-in  text-dark" aria-hidden="true"></i></a> 
+                    <a class="nav-link " href="https://dribbble.com/neilmackay" target="_blank"><i class="fab fa-dribbble  text-dark" aria-hidden="true"></i></a>    
+                    <a class="nav-link " href="https://vimeo.com/user18160957" target="_blank"><i class="fab fa-vimeo-v  text-dark" aria-hidden="true"></i></a>  
+                  </div>   
+                </div>                
+              </div>       
+            </nav>
+            <div class="menu-overlay"></div>                      
+            <div class="row">
+              <nav class="col-1 side-navbar justify-content-center d-sm-flex d-none" id="myScrollspy">
+                <ul class="nav nav-menu-link flex-column justify-content-center">
+                  <li class="nav-item d-flex align-items-center row pb-3">
+                    <i class="fas fa-home text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                    <a class="nav-link nav-menu-link" href="#section1">Home</a>      
+                  </li>
+                  <li class="nav-item d-flex align-items-center row pb-3">
+                    <i class="fas fa-user text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                    <a class="nav-link nav-menu-link" href="#section2">About me</a>
+                  </li>
+                  <li class="nav-item d-flex align-items-center row pb-3">
+                    <i class="fas fa-th-large text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                    <a class="nav-link nav-menu-link" href="#section3">Portfolio</a>   
+                  </li>
+                  <li class="nav-item d-flex align-items-center row pb-3">
+                    <i class="fas fa-file-alt text-black col-1 text-center ml-1 pl-3" aria-hidden="true"></i>
+                    <a class="nav-link nav-menu-link" href="#section4">Resumé</a> 
+                  </li>  
+                  <li class="nav-item d-flex align-items-center row pb-3">
+                    <i class="fas fa-envelope text-black col-1 text-center ml-1" aria-hidden="true"></i>
+                    <a class="nav-link nav-menu-link"  href="mailto:neilmackay01@gmail.com">Contact</a>  
+                  </li>                            
+                </ul>
+                <div class=" mb-2 fixed-bottom ml-5">
+                  <a class="nav-link " href="https://www.linkedin.com/in/neilmackay" target="_blank"><i class="fab fa-linkedin-in  text-dark" aria-hidden="true"></i></a> 
+                  <a class="nav-link " href="https://dribbble.com/neilmackay" target="_blank"><i class="fab fa-dribbble  text-dark" aria-hidden="true"></i></a>    
+                  <a class="nav-link " href="https://vimeo.com/user18160957" target="_blank"><i class="fab fa-vimeo-v  text-dark" aria-hidden="true"></i></a>  
+                </div>   
+              </nav>
+              <div class="col">
+                <div class="row align-items-center" id="section1">                       
+                  <div class="col-11 offset-1 pb-4">
+                    <div class="row align-items-center">
+                      <div class="col-11 col-md-6 mt-5 pt-5 pl-3  pl-sm-0 ml-sm-0">
+                        <p class="font-size-18 mb-2">Hello, my name is</p>             
+                        <h1 class="font-weight-normal font-Lora">Neil Mackay</h1>
+                        <h2 class="font-weight-normal font-Lora">I create 
+                          <span
+                            class="txt-rotate"
+                            data-period="1000"
+                            data-rotate='[ "websites.", "mockups.", "wireframes.","web designs." ]'></span>
+                        </h2>
+                        <a href="#section3"><button type="button" class="btn btn-turquoise mt-5" >My portfolio</button></a> 
+                      </div>    
+                      
+                      <div class="col-md-6 col-12 px-0">
+                        <div class="home-image-container">
+                          <div class="css-float-container">
+                            <img src="images/CSS sphere  float.png">
+                          </div>​     
+                          <div class="html-float-container">
+                            <img src="images/HTML Sphere  float.png">
+                          </div>​                                           
+                          <div class="adobe-float-container">
+                            <img src="images/Adobe Sphere float.png">
+                          </div>
+                          <div class="sketch-float-container">
+                            <img src="images/Sketch Sphere  float.png">
+                          </div>
+                          <div class="drawn-image-container home-image">
+                            <img src="images/Neil side.png" alt="Neil waving">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>    
+                
+                <div class="row align-items-center px-4 px-md-0" id="section2" > 
+                  <div class="col-5 d-none d-md-inline">
+                    <div class="drawn-image-container">
+                      <img src="images/Neil waving.png" alt="Neil waving">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12  pb-4">
+                    <h2 class="font-Lora"><strong>All about me</strong></h2>
+                    <p class="mb-1 mt-4 pt-4"><strong>“Don’t sacrifice tomorrow’s memories by being economical today”</strong> - <i>Someone special</i></p>
+                    <p>I believe that if you want to do something you should go out and get it done. Don’t let people hold you back. If there is an obstacle in your way find a solution to get over it or get around it.
+                      When I was 18 I wanted to travel the world, but I couldn’t afford to hop on a plane and start travelling. So I helped deliver a 39ft catamaran by sailing across the Atlantic Ocean from Cape Town to Florida. This led me to start my career in the superyacht industry which allowed me to see the world.
+                      I’ve since left that industry, but the lessons I’ve learned along the way will be with me forever.</p>
+                    <p class="mb-1 mt-4 pt-4"><strong>“Anyone who stops learning is old, whether at twenty or eighty”</strong> - <i>Henry Ford</i></p>
+                    <p>I never went to college or university, but that doesn’t mean that I stopped learning after high school.
+                      I’ve found that there is always something new to learn everyday, no matter how big or small. 
+                      If I get stuck on something I don’t hesitate to do a quick Google search for the answer, or enroll in a new online course to further expand my knowledge on a subject.
+                    </p>
+                    <p class="mb-1 mt-4 pt-4"><strong>“I meant what I said and I said what I meant.”</strong> - <i>Dr. Seuss</i></p>
+                    <p>Lying never ends well. I’d much rather tell the truth about something, especially if it has to do with my capabilities of being able to do a task. If I don’t know how to do it I’ll be upfront and let you know. I’ll also let you know that I’ll do my best to figure out how to do the task, but pretending to know everything is not me.</p>
+                  </div>
+                  <div class="col-6 d-md-none">
+                    <div class="drawn-image-container">
+                      <img src="images/Neil waving.png" alt="Neil waving">
+                    </div>
+                  </div>
+                </div>  
+                <div class="row px-4 px-md-0"  id="section3">   
+                  <div class="col-12 col-md-11 offset-md-1 pb-4">   
+                    <h2 class="font-Lora pt-5 mt-5 pb-4 mb-3"><strong>Portfolio</strong></h2>
+                    <div class="row portfolio-work pb-5 mb-5">
+                      <div class="col-md-4 col-12 mr-4">
+                        <h3 class="pb-4">Ecommerce store</h3>
+                        <p class="pb-4">An ecommerce website that provides unformation about their products and sells to the public via their website.</p>
+                        <div class="card shadow d-md-none">
+                          <div class="card-body">
+                            <img class="project-image pointer" src="images/Wild Leaf Kombucha .png" alt="Wild Leaf Kombucha web design"  data-toggle="modal" data-target="#project1">
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between pb-md-4 pt-4">
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/HTML  Sphere.png" alt="HTML5 sphere">
+                            <p class="fon-size-12 text-center text-light-grey">HTML</p>
+                          </div>
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/CSS Sphere.png" alt="CSS sphere">
+                            <p class="fon-size-12 text-center text-light-grey">CSS</p>
+                          </div>
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/Shopify Sphere.png" alt="Shopify sphere">
+                            <p class="fon-size-12 text-center text-light-grey">Shopify</p>
+                          </div>
+                        </div>
+                        <p class="font-size-18 turquoise pt-md-4 pointer" data-toggle="modal" data-target="#project1">View my thought process</p>
+                      </div>
+                      <div class="col-7 ml-2 d-none d-md-block">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <img class="project-image pointer" src="images/Wild Leaf Kombucha .png" alt="Wild Leaf Kombucha web design" data-toggle="modal" data-target="#project1">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade bd-example-modal-xl" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Title" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                          <div class="modal-content px-5">
+                            <div class="modal-header border-0 mt-3">
+                              <h3 class="modal-title" id="project1Title">Ecommerce store</h3>
+                              <button type="button" class="close turquoise pt-4" data-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-times turquoise"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body pb-4">
+                              An ecommerce website that provides unformation about their products and sells to the public via their website
+                              <div class="card shadow w-75 my-3">
+                                <div class="card-body">
+                                  <img class="project-image pointer" src="images/Wild Leaf Kombucha .png" alt="Wild Leaf Kombucha web design">
+                                </div>
+                              </div>
+                              <h4 class="pt-4">The project</h4>
+                              <p>This project involved creating an entire eccomerce store where users can make purchases online and have the product delivered to them. 
+                                I built the original site on Wix, but after a year the decision was made to rebuild it on Shopify.</p>
+                              <h4 class="pt-4">My goal</h4>
+                              <p>My goal for this project was to provide enough information to users on what Kombucha is, as it was fairly new to South Africa when the site launched. 
+                                I also wanted to make it easy for users to navigate through the site, find out where they could purchase the product from and be able to make purchases online easily.</p>
+                              <h4 class="pt-4">What I did</h4>
+                              <p>Created the wireframe for the design layout of the homepage. <br>
+                                Built the front-end of all the other pages using HTML and CSS. This included making sure they were responsive across multiple device sizes.<br>
+                                Set up the backend of the Shopify store which included uploading all products, shipping details, activating payment methods.<br>
+                                Created and edited all the product photos.</p>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>                 
+                    </div>
+                    <div class="row portfolio-work py-5 my-5">
+                      <div class="col-md-4 col-12 mr-4">
+                        <h3 class="pb-4">Bonsai store template</h3>
+                        <p class="pb-4">A website design for a bonsai shop that provides information for the public on different species and how to care for them.</p>
+                        <div class="card shadow d-md-none">
+                          <div class="card-body">
+                            <img class="project-image pointer" src="images/Bonsai.png" alt="Bonsai web design" data-toggle="modal" data-target="#project2">
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between pb-md-4 pt-4">
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/Sketch Sphere.png" alt="Sketch sphere">
+                            <p class="fon-size-12 text-center text-light-grey">Sketch</p>
+                          </div>
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/HTML  Sphere.png" alt="HTML5 sphere">
+                            <p class="fon-size-12 text-center text-light-grey">HTML</p>
+                          </div>
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/CSS Sphere.png" alt="CSS sphere">
+                            <p class="fon-size-12 text-center text-light-grey">CSS</p>
+                          </div>
+                        </div>
+                        <p class="font-size-18 turquoise pt-md-4 pointer" data-toggle="modal" data-target="#project2">View my thought process</p>
+                      </div>
+                      <div class="col-7 ml-2 d-none d-md-block">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <img class="project-image pointer" src="images/Bonsai.png" alt="Bonsai web design" data-toggle="modal" data-target="#project2">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade bd-example-modal-xl" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2Title" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                          <div class="modal-content px-5">
+                            <div class="modal-header border-0 mt-3">
+                              <h3 class="modal-title" id="project2Title">Bonsai store template</h3>
+                              <button type="button" class="close turquoise pt-4" data-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-times turquoise"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body pb-4">
+                              A website design for a bonsai shop that provides information for the public on different species and how to care for them.
+                              <div class="card shadow w-75 my-3">
+                                <div class="card-body">
+                                  <img class="project-image pointer" src="images/Bonsai.png" alt="Bonsai web design">
+                                </div>
+                              </div>
+                              <h4 class="pt-4">The project</h4>
+                              <p>This project involved researching some of the most popular designs and creating this design through Sketch. 
+                                After making the design I wrote all the code from scratch using a mobile first approach.</p>
+                              <h4 class="pt-4">My goal</h4>
+                              <p>My goal for this project was to really emphasise the Bonsai species that are available at the store.</p>
+                              <h4 class="pt-4">What I did</h4>
+                              <p>Designed the protoype using Sketch.<br>
+                                Wrote the code (HTML, CSS, Javascript) using Visual Studio Code.<br>
+                                Ensured that it worked accross multiple browsers and device sizes.</p>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="row portfolio-work py-5 my-5">
+                      <div class="col-md-4 col-12 mr-4">
+                        <h3 class="pb-4">Travel blog</h3>
+                        <p class="pb-4">An online travel diary for the user to share their travel experiences to their audience.</p>
+                        <div class="card shadow d-md-none">
+                          <div class="card-body">
+                            <img class="project-image pointer" src="images/Travel blog.png" alt="Travel blog web design" data-toggle="modal" data-target="#project3">
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between pb-md-4 pt-4">
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/Invision Sphere.png" alt="Invision sphere">
+                            <p class="fon-size-12 text-center text-light-grey">Invision</p>
+                          </div>   
+                          <div class="portfolio-sphere-container">
+                            <img class="portfolio-sphere" src="images/Sketch Sphere.png" alt="Sketch sphere">
+                            <p class="fon-size-12 text-center text-light-grey">Sketch</p>
+                          </div>  
+                          <div class="portfolio-sphere-container"></div>                                           
+                        </div>
+                        <p class="font-size-18 turquoise pt-md-4 pointer" data-toggle="modal" data-target="#project3">View my thought process</p>
+                      </div>
+                      <div class="col-7 ml-2 d-none d-md-block">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <img class="project-image pointer" src="images/Travel blog.png" alt="Travel blog web design" data-toggle="modal" data-target="#project3">
+                          </div>
+                        </div>
+                      </div>
+                     <!-- Modal -->
+                     <div class="modal fade bd-example-modal-xl" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3Title" aria-hidden="true">
+                      <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content px-5">
+                          <div class="modal-header border-0 mt-3">
+                            <h3 class="modal-title" id="project3Title">Travel blog</h3>
+                            <button type="button" class="close turquoise pt-4" data-dismiss="modal" aria-label="Close">
+                              <i class="fas fa-times turquoise"></i>
+                            </button>
+                          </div>
+                          <div class="modal-body pb-4">
+                            An online travel diary for the user to share their travel experiences to their audience.
+                            <div class="card shadow w-75 my-3">
+                              <div class="card-body">
+                                <img class="project-image pointer" src="images/Travel blog.png" alt="Travel blog web design">
+                              </div>
+                            </div>
+                            <h4 class="pt-4">The project</h4>
+                            <p>This project involved designing a blog / travel diary where users can post their experiences and their audience can view them.</p>
+                            <h4 class="pt-4">My goal</h4>
+                            <p>My goal was to make an easy to navigate web page that focuses on the image taken by the traveller. I also wanted to experiment with different page transitions using Invision.</p>
+                            <h4 class="pt-4">What I did</h4>
+                            <p>Researched different travel blogs and designs for inspiration. <br>
+                              Designed the page layouts using Sketch.<br>
+                              Imported the pages into Invision and created a working prototype featuring transitions between the pages.<br>
+                            </p>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>  
+                    </div>
+                  </div>   
                 </div>
-            </footer>
-            <script src="lightbox.js"></script> 
+                <div class="row align-items-center px-4 px-md-0" id="section4" > 
+                  <div class="col-5 d-none d-md-inline">
+                    <div class="drawn-image-container">
+                      <img src="images/Neil sitting.png" alt="Neil sitting">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12 pb-4">
+                    <h2 class="font-Lora"><strong>Resumé</strong></h2>
+                    <p class="font-size-18 mb-2 pt-4">Skills</p>
+                    <div class="row">                    
+                      <div class="col-12 col-lg-6">
+                        <div>
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">Web design</p>
+                            <p class="text-light-grey mb-2">80%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class=" pt-3">
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">HTML 5</p>
+                            <p class="text-light-grey mb-2">85%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class=" pt-3">
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">CSS 3</p>
+                            <p class="text-light-grey mb-2">85%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class=" pt-3">
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">Javascript <span class="font-size-8">(learning)</span></p>
+                            <p class="text-light-grey mb-2">10%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>                      
+                      <div class="col-12 col-lg-6">
+                        <div>
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">Sketch</p>
+                            <p class="text-light-grey mb-2">75%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class=" pt-3">
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">Invision</p>
+                            <p class="text-light-grey mb-2">70%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class=" pt-3">
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">Photoshop</p>
+                            <p class="text-light-grey mb-2">80%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                        <div class=" pt-3">
+                          <div class="font-size-12 d-flex justify-content-between">
+                            <p class="mb-2">Photography</p>
+                            <p class="text-light-grey mb-2">85%</p>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-turquoise"  style="width: 85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="skill_bar">
+                            <div class="skill_bar_progress skill_one"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="font-size-18 mb-2 pt-4">Soft skills</p>
+                    <div class="row">
+                      <div class="col-6 col-xl-3">
+                        <div class="soft-skill-border text-center mb-3">
+                          Problem solving
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                          Creativity
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                         Enthusiasm
+                        </div>
+                      </div>
+                      <div class="col-6 col-xl-3">
+                        <div class="soft-skill-border text-center mb-3">
+                          Communication
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                          Leadership
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                         Desire to learn
+                        </div>
+                      </div>
+                      <div class="col-6 col-xl-3">
+                        <div class="soft-skill-border text-center mb-3">
+                          Organised
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                          Self-motivated
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                         Honesty
+                        </div>
+                      </div>
+                      <div class="col-6 col-xl-3">
+                        <div class="soft-skill-border text-center mb-3">
+                          Flexibility
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                          Team work
+                        </div>
+                        <div class="soft-skill-border text-center mb-3">
+                          Accountability
+                        </div>
+                      </div>
+                    </div>
+                    <div class='d-flex align-items-center'>
+                      <div class="col-6 d-md-none">
+                        <div class="drawn-image-container">
+                          <img src="images/Neil sitting.png" alt="Neil sitting">
+                        </div>
+                      </div>
+                      <a href="#"><button type="button" class="btn btn-turquoise mt-5 ml-3 ml-md-0 mb-4" >View my resumé</button></a>       
+                    </div>
+                  </div>
+                  
+                </div>            
+              </div>
+            </div>
+          </div>     
+      <script src="https://kit.fontawesome.com/2d4958e339.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/jquery.waypoints.min.js" type='text/javascript'></script>    
+      <script src="js/menu_overlay.js"  type='text/javascript'></script> 
+      <script src="js/progress_bar.js" type='text/javascript'></script>
+      <script src="js/typing.js" type='text/javascript'></script>
+      <script src="js/smooth_scrolling.js" type='text/javascript'></script>
+
+
+    
     </body>
-</html>
-
-
-
-
+  </html>
