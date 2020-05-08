@@ -273,11 +273,11 @@ ul.flex-column {
   }
 @media only screen and (max-width: 768px) {
   .home-image-container {
-    bottom: 80px;
+    bottom: 50px;
     position: relative;
     overflow-x: hidden;
     width: 100%;
-    height: 400px;
+    min-height: 400px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -286,11 +286,9 @@ ul.flex-column {
     position: relative;
     overflow-x: hidden;
     width: 100%;
-    height: 400px;
+    min-height: 400px;
   }
 }
-
-
 
 
 /* Linear movement */
