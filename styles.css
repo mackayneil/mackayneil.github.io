@@ -46,10 +46,6 @@ a:hover {
   background: #F8F8F8 !;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
-#name-logo {
- z-index: 20;
-	color: red;
-}
 h1 {
   font-size: 60px !important;
 }
@@ -191,12 +187,6 @@ ul.flex-column {
   min-width: 125px;
 }
 
-
-
-
-
-
-
 #about-us {
   background-color: white;
   padding: 60px 0;
@@ -271,15 +261,16 @@ ul.flex-column {
   .home-image-container {
     bottom: 80px;
     position: relative;
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 576px) {
   .home-image-container {
     bottom: 30px;
     position: relative;
+    overflow: hidden;	  
   }
 }
-
 
 /* Linear movement */
 @keyframes x-axis {
