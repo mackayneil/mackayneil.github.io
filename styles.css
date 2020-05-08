@@ -38,6 +38,7 @@ a:hover {
 }
 .navbar-brand {
   position: fixed;
+	color: red;
 }
 .side-navbar {
   min-width: 150px !important;
