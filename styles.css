@@ -36,10 +36,6 @@ a:hover {
 .nav-menu-link:active {
   color: #44A389;
 }
-.navbar-brand {
-  position: fixed;
-	color: red;
-}
 .side-navbar {
   min-width: 150px !important;
   max-width: 150px !important;
@@ -49,6 +45,10 @@ a:hover {
 .hidden-navbar {
   background: #F8F8F8 !;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+#name-logo {
+  position: fixed;
+  color: red;
 }
 h1 {
   font-size: 60px !important;
