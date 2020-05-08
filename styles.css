@@ -48,6 +48,7 @@ a:hover {
 }
 #name-logo {
  z-index: 20;
+	color: red;
 }
 h1 {
   font-size: 60px !important;
