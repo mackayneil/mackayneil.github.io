@@ -94,6 +94,7 @@ h4 {
   border-color: #44A389;
   border: 1px solid #44A389 !important;
   border-radius: 5px;
+  z-index: 999;
 }
 .btn-turquoise:hover {
   color: #fff !important;
@@ -123,8 +124,15 @@ ul.flex-column {
   position: fixed;
 }
 .social-icons {
-  position: fixed;
-  top: 84vh;
+ max-width: 10px;
+ margin-left: 3rem;
+}
+@media only screen and (max-height: 480px) {
+  .social-icons {
+    max-width: 10px;
+    display: flex !important;
+    margin-left: 0!important;
+   }
 }
 
 @media only screen and (max-width: 575px) {
@@ -267,14 +275,22 @@ ul.flex-column {
   .home-image-container {
     bottom: 80px;
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 400px;
   }
 }
 @media only screen and (max-width: 576px) {
   .home-image-container {
     bottom: 30px;
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 400px;
   }
 }
+
+
 
 
 /* Linear movement */
@@ -298,6 +314,7 @@ ul.flex-column {
     position: absolute;
     top: 22%;
     left: 75%;
+    
   }
   @keyframes y-axis {
     0%, 100% {
@@ -346,7 +363,7 @@ ul.flex-column {
 	top: 42%;
 	left: 60%;
 	margin: -20px;
-	animation: rot-lg 22s infinite linear;
+  animation: rot-lg 22s infinite linear;
 }
 @keyframes rot-sm {
 	from {
@@ -371,6 +388,6 @@ ul.flex-column {
 	top: 70%;
 	left: 50%;
 	margin: -20px;
-	animation: rot-sm 10s infinite linear;
+  animation: rot-sm 10s infinite linear;
 }
 
