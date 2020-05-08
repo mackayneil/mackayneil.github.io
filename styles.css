@@ -94,6 +94,7 @@ h4 {
   border-color: #44A389;
   border: 1px solid #44A389 !important;
   border-radius: 5px;
+  z-index: 10;
 }
 .btn-turquoise:hover {
   color: #fff !important;
@@ -262,15 +263,13 @@ ul.flex-column {
     bottom: 80px;
     position: relative;
     overflow-x: hidden;
-    z-index: -10;
   }
 }
 @media only screen and (max-width: 576px) {
   .home-image-container {
     bottom: 30px;
     position: relative;
-    overflow-x: hidden;	
-    z-index: -10;    	  
+    overflow-x: hidden;	 	  
   }
 }
 
