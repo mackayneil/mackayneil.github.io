@@ -36,6 +36,9 @@ a:hover {
 .nav-menu-link:active {
   color: #44A389;
 }
+.navbar-brand {
+  z-index:20;
+}
 .side-navbar {
   min-width: 150px !important;
   max-width: 150px !important;
