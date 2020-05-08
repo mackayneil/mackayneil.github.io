@@ -37,7 +37,7 @@ a:hover {
   color: #44A389;
 }
 .navbar-brand {
-  z-index:20;
+  position: fixed;
 }
 .side-navbar {
   min-width: 150px !important;
