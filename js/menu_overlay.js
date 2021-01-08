@@ -2,15 +2,15 @@ $('[data-toggle="slide-collapse"]').on('click', function() {
   $navMenuCont = $($(this).data('target'));
   $navMenuCont.animate({
     'width': 'toggle'
-  }, 350);
+  }, 300);
   $(".menu-overlay").fadeIn(500);
 
 });
-$(".menu-overlay").click(function(event) {
+$(".menu-overlay").click(function() {
   $(".navbar-toggler").trigger("click");
   $(".menu-overlay").fadeOut(500);          
 });
-$(".close-nav").click(function(event) {
+$(".close-nav").click(function() {
   $(".navbar-toggler").trigger("click");
   $(".menu-overlay").fadeOut(500);          
 });

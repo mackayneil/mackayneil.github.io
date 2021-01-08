@@ -72,29 +72,19 @@
             <i class="fas fa-home text-black col-1 text-center ml-1" aria-hidden="true"></i>
             <a class="nav-link nav-menu-link" href="#section1">Home</a>
           </li>
+
           <li class="nav-item d-flex align-items-center row pb-3">
             <i class="fas fa-user text-black col-1 text-center ml-1" aria-hidden="true"></i>
             <a class="nav-link nav-menu-link" href="#section2">About me</a>
           </li>
 
-          <div class="accordion" id="accordionNav">
-            <li class="nav-item d-flex align-items-center row" id="portfolio">
-              <i class="fas fa-th-large text-black col-1 text-center ml-1" aria-hidden="true"></i>
-              <div class="nav-link nav-menu-link" data-toggle="collapse" href="#section3" role="button"
-                aria-expanded="false" aria-controls="collapseNav">Portfolio<i id="navCaret" class="fas fa-angle-down pl-1 rotate" ></i></div>
-            </li>
 
-            <div class="collapse px-0 row " id="collapseNav">
-              <div class="ml-3 font-size-12 ">
-                <a id="navDesignWork" class="dropdown-item px-0" href="#accordionWork" data-toggle="collapse"
-                data-target="#collapseDesignWork" aria-expanded="true" aria-controls="collapseDesignWork">Design work </a>
-                <a id="navJavascriptProjects" class="dropdown-item px-0" href="#javascriptProjects" data-toggle="collapse"
-                data-target="#collapseJavascriptProjects" aria-expanded="false" aria-controls="collapseJavascriptProjects">Javascript projects</a>
-              </div>
-            </div>
-          </div>
+          <li class="nav-item d-flex align-items-center row pb-3">
+            <i class="fas fa-user text-black col-1 text-center ml-1" aria-hidden="true"></i>
+            <a class="nav-link nav-menu-link" href="#section3">Portfolio</a>
+          </li>
 
-          <li class="nav-item d-flex align-items-center row pb-3 pt-3">
+          <li class="nav-item d-flex align-items-center row pb-3">
             <i class="fas fa-file-alt text-black col-1 text-center ml-1 pl-3" aria-hidden="true"></i>
             <a class="nav-link nav-menu-link" href="#section4">Resumé</a>
           </li>
@@ -123,7 +113,11 @@
                   <span class="txt-rotate" data-period="1000"
                     data-rotate='[ "websites.", "mockups.", "wireframes.","web designs." ]'></span>
                 </h2>
-                <a class="btn btn-turquoise my-5" href="#section3" role="button">My portfolio</a>
+                <div class="my-5">
+                  <a class="btn btn-turquoise mr-3" href="#section3" role="button">My portfolio</a>
+                  <a href="https://mackayneil.github.io/javascript-projects/" target="_blank"><button type="button"
+                    class="btn btn-turquoise my-3">View all JS projects</button></a>
+                  </div>
               </div>
               <div class="col-md-6 col-12 px-0">
                 <div class="home-image-container">
@@ -449,6 +443,10 @@
                 </div>
                 <div id="collapseJavascriptProjects" class="collapse" aria-labelledby="javascriptProjects"
                   data-parent="#accordionWork">
+
+                  <a href="https://mackayneil.github.io/javascript-projects/" target="_blank"><button type="button"
+                    class="btn btn-turquoise my-3">View all JS projects</button></a>
+
                   <div class="card-body px-0">
                     <div class="row portfolio-work pb-5 mb-5">
                       <div class="col-md-4 col-12 mr-4">
