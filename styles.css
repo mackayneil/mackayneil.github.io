@@ -22,6 +22,7 @@ body {
 }
 a:hover {
   color: #44A389 !important;
+  text-decoration: none !important;
 }
 .nav-menu-link {
   color: #424242;
@@ -170,6 +171,10 @@ ul.flex-column {
 
 .project-image {
   max-width: 100%;
+}
+
+.project-image:hover {
+  opacity: 0.9;
 }
 .portfolio-sphere-container {
   width: 60px;
@@ -424,6 +429,10 @@ ul.flex-column {
   color: #44A389 !important;
 	text-decoration: none;
 	background-color: transparent !important;
+}
+
+.card-header {
+  background-color: #F8F8F8 !important;
 }
 
 /* Calculator app ---------------------------- */ 
