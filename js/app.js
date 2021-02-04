@@ -17,26 +17,26 @@ let rotateCaret = (x) => {
 designWork.addEventListener("click", function() {
   rotateCaret(designCaret);
 });
-navDesign.addEventListener("click", function() {
+/* navDesign.addEventListener("click", function() {
   rotateCaret(designCaret);
 });
-
+ */
 javascriptProjects.addEventListener("click", function() {
   rotateCaret(javascriptCaret);
 });
-navJavascript.addEventListener("click", function() {
+/* navJavascript.addEventListener("click", function() {
   rotateCaret(javascriptCaret);
-});
+}); */
 
-accordianNav.addEventListener("mouseenter", function() {
+/* accordianNav.addEventListener("mouseenter", function() {
   accordianContent.classList.toggle("show");
   rotateCaret(navCaret);
-});
+}); */
 
-accordianNav.addEventListener("mouseleave", function() {
+/* accordianNav.addEventListener("mouseleave", function() {
   accordianContent.classList.toggle("show");
   rotateCaret(navCaret);
-});
+}); */
 
 //Calculator ---------------------------
 (function(){
