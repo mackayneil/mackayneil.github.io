@@ -102,33 +102,43 @@
       <div class="col mt-4 pt-4 mt-sm-0 pt-sm-0">
         <div class="row" id="section1">
           <div class="col-12 my-3">
-            <h1 class="mb-0 text-center text-dark-grey font-Lora">Hobby and travel designs</h1>
-            <p class="mb-1 text-center">Mockups inspired by my hobbies and interests.
-            </p>
+            <h1 class="mb-0 text-center text-dark-grey font-Lora">Snyk</h1>
+            <p class="mb-1 text-center text-dark-grey">A developer security platform that finds and
+                automatically fixes vulnerabilities in your code,
+                open source dependencies, containers, and IaC.</p>
           </div>
-
           <div class="col-md-7 col-12 order-md-1 order-2">
             <div class="card shadow ">
               <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link text-dark-grey active" id="bonsai-tab" data-bs-toggle="tab" href="#bonsai"
-                      role="tab" aria-controls="bonsai" aria-selected="true">Bonsai shop</a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link text-dark-grey" id="travel-tab" data-bs-toggle="tab" href="#travel" role="tab"
-                      aria-controls="travel" aria-selected="false">Travel blog</a>
+                    <a class="nav-link text-dark-grey active" id="cloud-issues-tab" data-bs-toggle="tab" href="#cloud-issues" role="tab"
+                      aria-controls="cloud-issues" aria-selected="false">Cloud Issues</a>
                   </li>
 
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link text-dark-grey" id="environment-onboarding-tab" data-bs-toggle="tab" href="#environment-onboarding" role="tab"
+                      aria-controls="environment-onboarding" aria-selected="true">Environment onboarding</a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link text-dark-grey" id="ignores-tab" data-bs-toggle="tab" href="#ignores" role="tab"
+                      aria-controls="ignores" aria-selected="true">Ignores</a>
+                  </li>
                 </ul>
               </div>
               <div class="card-body tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="bonsai" role="tabpanel" aria-labelledby="bonsai-tab">
-                  <img class="w-100 " src="../images/Bonsai.jpg" alt="Bonsai shop mockup" />
+                <div class="tab-pane fade show active" id="cloud-issues" role="tabpanel" aria-labelledby="cloud-issues-tab">
+                  <img class="w-100 mb-2" src="images/CloudIssues.png" alt="cloud-issues page" />                
+                    <a class="turquoise"  href="https://www.figma.com/file/KZ07Kr3WZtDZQeaSQ0JgYi/Issues---March-2022?type=design&node-id=1094%3A670422&mode=design&t=2qwBSnKWJrssORF8-1" target="_blank">View Figma file</a>
                 </div>
-                <div class="tab-pane fade " id="travel" role="tabpanel" aria-labelledby="travel-tab">
-                  <img class="w-100" src="../images/Travel blog.jpg" alt="Travel blog mockup" />
+                <div class="tab-pane fade" id="environment-onboarding" role="tabpanel" aria-labelledby="environment-onboarding-tab">
+                  <img class="w-100 mb-2" src="images/EnvironmentOnboarding.png" alt="environment-onboarding page" />
+                  <a class="turquoise"  href="https://www.figma.com/file/EovI8AkJa1ESIp4sGjZOfV/Environment-onboarding---June-2022?type=design&node-id=329%3A98042&mode=design&t=wzh8JLOPiUVGuEQh-1" target="_blank">View Figma file</a>
+                </div>
+                <div class="tab-pane fade" id="ignores" role="tabpanel" aria-labelledby="ignores-tab">
+                  <img class="w-100 mb-2" src="images/Ignores.png" alt="ignores page" />
+                  <a class="turquoise"  href="https://www.figma.com/file/BppJlI7KXd0l17gGFNvZhq/Ignores---simple---Dec-2022?type=design&node-id=180%3A79110&mode=design&t=xVnyHo0L6yMW4Kqr-1" target="_blank">View Figma file</a>
                 </div>
               </div>
             </div>
@@ -137,27 +147,26 @@
           <div class="col-md-4 col-12 mr-4 order-md-2 order-1">
             <h6>Challenge</h6>
             <p class="font-weight-light">
-              To use a mobile first design approach to create aesthetically pleasing designs using Sketch.
+             Each of these pages shown had their own challenges to navigate, but as a summary my goal was to ensure that users could onboard their cloud environments, view their issues, and ignore the issues if they wanted to.
             </p>
-
             <h6>Process</h6>
             <p class="font-weight-light">
             <ul>
-              <li class="font-weight-light">Researched relevant designs for inspiration</li>
-              <li class="font-weight-light">Developed low fidelity wireframes consisting of basic shapes across a grid
-                system</li>
-              <li class="font-weight-light">From the low fidelity I then created a high fidelity mockup</li>
-              <li class="font-weight-light">Utilised Invision app to simulate interactivity</li>
-              <li class="font-weight-light">Wrote the HTML, CSS and Javascript code from scratch</li>
-              <li class="font-weight-light">Tested coded projects across Chrome, Firefox, Safari and on multiple device
-                sizes</li>
+              <li class="font-weight-light">Closely reviewed existing patterns within Snyk and worked with other designers to implement new patterns for the needs of my work and any use cases there may be else where within the platform.</li>
+              <li class="font-weight-light">Worked closely with stakeholders and managers to get design feedback early on.</li>
+              <li class="font-weight-light">Iterated on the designs after getting feedback from users as well as internal people.</li>
+              <li class="font-weight-light">Collaborated with the frontend team to build components needed.</li>
+              <li class="font-weight-light">Implemented the designs myself using Vue3 and wrote tests for new components and pages.</li>        
+              <li class="font-weight-light">Updated any features that needed to be updated after getting user feedback.</li>
+              <li class="font-weight-light">Added additional features that weren't part of the MVP when time allowed.</li>
             </ul>
             </p>
             <h6>Result</h6>
             <p class="font-weight-light">
-              The end products are usable templates for small businesses and hobbyists.
+              Snyk did not have a Cloud product before the acquisition of Fugue. This work helped bring over some key features as well as new ones from Fugue into Snyk.
             </p>
 
+            <a class="btn btn-turquoise mb-3" href="https://snyk.io/" target="_blank">View website</a>
           </div>
 
         </div>
@@ -189,7 +198,7 @@
         event.preventDefault()
         tabTrigger.show()
       })
-    });
+    })
   </script>
 
 </body>
